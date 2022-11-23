@@ -1,0 +1,80 @@
+body {
+    background-image:url('/Projet_4-5/Projet 5/Modification pour site final/img/Background_AC_final.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 50px;
+}
+
+
+
+.contact_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#open {
+    height: 30px;
+    width: 175px;
+    font-size: 15px;
+    font-family: "Playfair display", serif;
+    color:#fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    background-color: #bb2d3b;
+}
+
+#open:hover {
+    letter-spacing: 3px;
+}
+
+.Formulaire {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0; left: 0;
+}
+
+.Formulaire .Form_contenu {
+    height: 400px;
+    max-width:350px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    background: #fff;
+    top: 25vh; left: 40vw;
+}
+
+.Formulaire .Form_contenu .h3{
+    margin: 0 15px;
+}
+
+.Formulaire .Form_contenu .question {
+    margin: 15px;
+}
+
+.Formulaire .Form_contenu .button {
+    height: 35px;
+    width: 125px;
+    background: #333;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.Formulaire .Form_contenu .button:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}

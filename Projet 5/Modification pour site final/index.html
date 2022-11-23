@@ -67,13 +67,7 @@
 		/>
 	</head>
 
-	<body
-		style="
-			background: url('assets/img/Background_AC_final.webp?h=a9568e162c1b314001e00ae5becaf8ff')
-				center / cover no-repeat fixed;
-			margin-top: 50px;
-		"
-	>
+	<body>
 		<!-- Start: Navbar Centered Links -->
 		<nav
 			class="navbar navbar-light navbar-expand-md py-3 fixed-top"
@@ -91,10 +85,18 @@
 					src="assets/img/Logo_AC_Ubisoft.png?h=3ea18ee185150e53e447ad9cb390719b"
 					style="padding-right: 0px; margin-right: -15px; margin-left: -20px"
 					alt="Logo de la saga Assassin's Creed"
+					data-bss-hover-animate="wobble"
 				/>
-				<h1 class="text-light" style="font-size: 30px; font-family: Roboto, sans-serif">
-					Assassin's Creed
-				</h1>
+				<a
+					class="nav-link link-light"
+					href="https://youtu.be/GBIIQ0kP15E"
+					target="_blank"
+					data-bss-hover-animate="pulse"
+				>
+					<h1 class="text-light" style="font-size: 25px; font-family: Roboto, sans-serif">
+						Assassin's Creed
+					</h1>
+				</a>
 				<button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3">
 					<span class="visually-hidden">Toggle navigation</span
 					><span class="navbar-toggler-icon"></span>
@@ -136,14 +138,8 @@
 								>Jeux</a
 							>
 						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link active link-light"
-								data-bss-hover-animate="pulse"
-								href="#Contact"
-								style="font-family: Roboto, sans-serif"
-								>Contact</a
-							>
+						<li id="Contact" class="contact_container">
+							<button id="open">Contactez-nous</button>
 						</li>
 					</ul>
 				</div>
@@ -308,16 +304,12 @@
 			</div>
 
 			<section>
-				<div id="Contact" class="contact_container">
-					<button id="open">Contactez-nous</button>
-				</div>
 				<div id="Modal" class="Formulaire">
 					<div class="Form_contenu">
 						<h3>Pour nous contacter</h3>
 						<div class="question">
 							<label for="username">Nom :</label>
 							<input type="text" placeholder="Jean-Luc" id="name" />
-							<small>Error message</small>
 						</div>
 						<div class="question">
 							<label for="username">Email :</label>
