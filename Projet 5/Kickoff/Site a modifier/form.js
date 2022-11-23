@@ -34,7 +34,7 @@ function outsideClick(e) {
 //Validation du formulaire
 
 /*Definit les fonctions */
-const form = document.getElementById('Formulaire');
+const form = document.getElementById('Modal');
 const username = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
