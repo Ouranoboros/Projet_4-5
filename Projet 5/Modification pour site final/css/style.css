@@ -8,73 +8,163 @@ body {
 
 
 
-.contact_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#open {
-    height: 30px;
-    width: 175px;
-    font-size: 15px;
-    font-family: "Playfair display", serif;
-    color:#fff;
+/* Design button contact and form */
+.button {
+    background: transparent;
+    border: 0;
     cursor: pointer;
-    letter-spacing: 1px;
-    outline: none;
-    border: none;
-    background-color: #bb2d3b;
-}
-
-#open:hover {
-    letter-spacing: 3px;
-}
-
-.Formulaire {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0; left: 0;
-}
-
-.Formulaire .Form_contenu {
-    height: 400px;
-    max-width:350px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    position: fixed;
-    background: #fff;
-    top: 25vh; left: 40vw;
-}
-
-.Formulaire .Form_contenu .h3{
-    margin: 0 15px;
-}
-
-.Formulaire .Form_contenu .question {
-    margin: 15px;
-}
-
-.Formulaire .Form_contenu .button {
-    height: 35px;
-    width: 125px;
-    background: #333;
     color: #fff;
-    outline: none;
-    border: none;
-    border-radius: 50px;
-    font-size: 20px;
+  }
+    
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header h3,
+  .modal-footer h3 {
+    color: #333;
+    margin: 0;
+  }
+  
+  .modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    background: #fff;
+  }
+  
+  .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .close {
+    color: #333!important;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
     cursor: pointer;
-    margin: 5px;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  .form {
+	padding: 30px 40px;	
 }
 
-.Formulaire .Form_contenu .button:hover {
-    letter-spacing: 2px;
-    opacity: .8;
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
 }
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color: #8e44ad;
+	border: 2px solid #8e44ad;
+	border-radius: 10px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+/* End Design button contact and form */

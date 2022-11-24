@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 		<title>Assassin's Creed Presentation</title>
 		<meta property="og:type" content="website" />
+		<meta name="" content="" />
 		<meta
 			name="description"
 			content="Ce site vient présenter la saga des jeux Assassin's Creed développer par Ubisoft. Vous pourrez retrouver une introduction sur le scénario global de la saga et le gameplay des jeu."
@@ -48,7 +49,7 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="/Projet_4-5/Projet 5/Modification pour site final/assets/bootstrap/css/bootstrap.min.css"
+			href="assets/bootstrap/css/bootstrap.min.css?h=025df1ec88740cad5ff14bb3380da6dd"
 		/>
 		<link
 			rel="stylesheet"
@@ -61,13 +62,15 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
 		/>
 		<link rel="stylesheet" href="assets/css/iframe.css?h=f1bd603fd7fa8b679e348be3cc841088" />
-		<link
-			rel="stylesheet"
-			href="/Projet_4-5/Projet 5/Modification pour site final/css/style.css"
-		/>
 	</head>
 
-	<body>
+	<body
+		style="
+			background: url('assets/img/Background_AC_final.webp?h=a9568e162c1b314001e00ae5becaf8ff')
+				center / cover no-repeat fixed;
+			margin-top: 50px;
+		"
+	>
 		<!-- Start: Navbar Centered Links -->
 		<nav
 			class="navbar navbar-light navbar-expand-md py-3 fixed-top"
@@ -85,18 +88,10 @@
 					src="assets/img/Logo_AC_Ubisoft.png?h=3ea18ee185150e53e447ad9cb390719b"
 					style="padding-right: 0px; margin-right: -15px; margin-left: -20px"
 					alt="Logo de la saga Assassin's Creed"
-					data-bss-hover-animate="wobble"
 				/>
-				<a
-					class="nav-link link-light"
-					href="https://youtu.be/GBIIQ0kP15E"
-					target="_blank"
-					data-bss-hover-animate="pulse"
-				>
-					<h1 class="text-light" style="font-size: 30px; font-family: Roboto, sans-serif">
-						Assassin's Creed
-					</h1>
-				</a>
+				<h1 class="text-light" style="font-size: 30px; font-family: Roboto, sans-serif">
+					Assassin's Creed
+				</h1>
 				<button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3">
 					<span class="visually-hidden">Toggle navigation</span
 					><span class="navbar-toggler-icon"></span>
@@ -138,9 +133,7 @@
 								>Jeux</a
 							>
 						</li>
-						<li id="modal-btn" class="button">
-							<button id="open">Contactez-nous</button>
-						</li>
+						<button id="modal-btn" class="button">Contact</button>
 					</ul>
 				</div>
 			</div>
@@ -210,9 +203,9 @@
 							<img
 								class="w-100 d-block"
 								alt="Tous les assassins des différents jeux"
-								src="/Projet_4-5/Projet 5/Modification pour site final/img/1_bis.webp"
+								src="assets/img/1.webp?h=16b72be2ed29375e68d5a034c1aab9b7"
 								loading="eager"
-								width="1296px"
+								width="1116px"
 								height="627px"
 							/>
 						</div>
@@ -302,49 +295,48 @@
 				></iframe
 				><!-- End: iframe -->
 			</div>
-		</section>
 
-		<section>
-			<div id="my-modal" class="modal">
-				<div class="modal-content">
-					<div class="modal-header">
-						<span class="close">&times;</span>
-						<h3>Contact</h3>
-					</div>
-					<div class="modal-body">
-						<form id="form" class="form">
-							<div class="form-control">
-								<label for="username">Nom</label>
-								<input type="text" placeholder="Jean-luc" id="name" />
-								<i class="fas fa-check-circle"></i>
-								<i class="fas fa-exclamation-circle"></i>
-								<small>Error message</small>
-							</div>
-							<div class="form-control">
-								<label for="username">Email</label>
-								<input type="email" placeholder="jean.luc@gmail.com" id="email" />
-								<i class="fas fa-check-circle"></i>
-								<i class="fas fa-exclamation-circle"></i>
-								<small>Error message</small>
-							</div>
-							<div class="form-control">
-								<label for="username">message</label>
-								<input
-									type="textarea"
-									placeholder="Entrez votre message ici"
-									id="message"
-								/>
-								<i class="fas fa-check-circle"></i>
-								<i class="fas fa-exclamation-circle"></i>
-								<small>Error message</small>
-							</div>
-							<button>Envoyer</button>
-						</form>
+			<section>
+				<div id="my-modal" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+							<span class="close">&times;</span>
+							<h1>Contact</h1>
+						</div>
+						<div class="modal-body">
+							<form id="form" class="form">
+								<div class="form-control">
+									<label for="username">Nom</label>
+									<input type="text" placeholder="Ludo" id="name" />
+									<i class="fas fa-check-circle"></i>
+									<i class="fas fa-exclamation-circle"></i>
+									<small>Error message</small>
+								</div>
+								<div class="form-control">
+									<label for="username">Email</label>
+									<input type="email" placeholder="l@four-pop.com" id="email" />
+									<i class="fas fa-check-circle"></i>
+									<i class="fas fa-exclamation-circle"></i>
+									<small>Error message</small>
+								</div>
+								<div class="form-control">
+									<label for="username">message</label>
+									<input
+										type="textarea"
+										placeholder="Entrez votre message ici"
+										id="message"
+									/>
+									<i class="fas fa-check-circle"></i>
+									<i class="fas fa-exclamation-circle"></i>
+									<small>Error message</small>
+								</div>
+								<button>Envoyer</button>
+							</form>
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</section>
-
 		<!-- Start: Footer Clean -->
 		<footer class="text-center py-4">
 			<div class="container">
@@ -380,7 +372,8 @@
 			</div>
 		</footer>
 		<!-- End: Footer Clean -->
-		<script src="/Projet_4-5/Projet 5/Modification pour site final/js/form.js"></script>
+		<script src="form.js"></script>
+		<script src="/Projet_4-5/Projet 5/Kickoff/Site a modifier/form.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 		<script src="assets/js/bs-init.js?h=67ee20cf4e5150919853fca3720bbf0d"></script>
